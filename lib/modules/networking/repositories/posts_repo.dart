@@ -1,6 +1,7 @@
-import 'package:payfazz_learn/networking/retrofit/posts_api_clint.dart';
 
-import '../models/post.dart';
+
+import '../../../retrofit/models/post.dart';
+import '../../../retrofit/posts_api_clint.dart';
 
 class PostsRepo {
   late PostsApiClint apiClint;

@@ -42,6 +42,17 @@ dependencies:
   retrofit: '>=3.0.0 <4.0.0'
   logger: any
   dio: ^4.0.6
+  bloc: ^8.0.3
+  flutter_bloc: ^8.0.1
+  flutter_modular: # Documentation: https://github.com/biscottis/modular/tree/null-safe-2.0.1
+    git:
+      url: https://github.com/biscottis/modular
+      path: flutter_modular
+      ref: ab9102128918eec2c5461a4b01cec3bbe1cae194
+  expandable: ^5.0.1
+  flutter_cache_manager: ^3.3.0
+  webview_flutter: ^3.0.4
+
 
 dev_dependencies:
   retrofit_generator: '>=4.0.0 <5.0.0'

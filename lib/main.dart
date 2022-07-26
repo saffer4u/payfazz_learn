@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:payfazz_learn/home_page.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:payfazz_learn/modules/home/home_module.dart';
+import 'package:payfazz_learn/modules/home/pages/home_page.dart';
 
 void main() async {
-  runApp(const MyApp());
+  runApp(
+    ModularApp(module: HomeModule()),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -10,8 +14,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      navigatorKey: Modular.navigatorKey,
+      onGenerateRoute: Modular.generateRoute,
+      initialRoute: "/",
     );
   }
 }
